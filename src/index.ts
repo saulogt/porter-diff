@@ -74,8 +74,6 @@ async function doIt() {
         return name;
       });
 
-    console.log(snames);
-
     const stagingApp = await select({
       message: "Select the staging app",
       choices: snames.map((name: any) => ({ name, value: name })),
