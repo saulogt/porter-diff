@@ -1,10 +1,12 @@
 {
   "name": "porter-diff",
-  "version": "1.0.3",
+  "version": "1.0.5",
+
   "description": "A way to quickly diff two apps code running in distict porter clusters. It requires porter cli",
-  "main": "./index.js",
-  "bin": "./index.js",
+  "main": "./dist/index.js",
+  "bin": "./dist/index.js",
   "author": "saulotauil.com",
+  "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,18 +14,23 @@
   },
   "scripts": {
     "start": "ts-node index.ts",
-    "build": "tsc",
+    "build": "npx tsc",
     "publish": "npm publish --access public",
-    "prepublish": "yarn run build"
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.24"
   },
   "dependencies": {
     "@inquirer/input": "^2.0.0",
     "@inquirer/select": "^2.0.0",
     "open": "^10.0.4"
+  },
+  "volta":{
+    "node": "20.9.0"
+    
   }
 }
