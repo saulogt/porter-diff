@@ -5,10 +5,12 @@
   "main": "index.js",
   "author": "saulotauil.com",
   "license": "MIT",
+  "repository": {"type": "git", "url": "https://github.com/saulogt/porter-diff"},
   "scripts": {
     "start": "ts-node index.ts",
     "build": "tsc",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "prepublish": "npm run build"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
