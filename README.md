@@ -11,7 +11,11 @@ It has a very specific use case.
 
 ## Installation
 
-To install the CLI package, you can use [package manager name] by running the following command:
+To install the CLI package run the following command:
+
+```
+npm install porter-diff -g
+```
 
 ## Requirements
 
