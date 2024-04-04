@@ -34,3 +34,4 @@ or
 ```
 porter auth login
 ```
+Used in my side project [Optigrid](https://www.optigrid.io)
